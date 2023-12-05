@@ -1,0 +1,110 @@
+#team__project {
+    display: flex;
+    padding: 200px 70px 0 70px;
+    height: 100vh;
+}
+.project__wrap {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.wrap {
+    width: 30%;
+    position: relative;
+}
+.icon {
+    position: absolute;
+    top: 5%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    top: 25px;
+    width: 90%;
+    height: 10px;
+    background-color: black;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    animation: arrow 700ms linear infinite;
+}
+
+.arrow::after,
+.arrow::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 10px;
+    right: -8px;
+    background-color: black;
+}
+
+.arrow::after {
+    top: -12px;
+    transform: rotate(45deg);
+}
+
+.arrow::before {
+    top: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transform: rotate(-45deg);
+}
+/* 화살표 애니메이션 */
+
+
+.text {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text .text__main {
+    font-size: 3.4vw;
+    line-height: 120%;
+}
+
+.text__desc {
+    margin-top: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text p {
+    width: 100%;
+    font-size: 1.3vw;
+    
+}
+.project__more {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.project__more .more {
+    position: relative;
+    display: inline;
+    width: 90%;
+    padding-bottom: 3px;
+}
+.project__more .more::before {
+    border-bottom: 1px solid #e7e7e7;
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: 0%;
+    transition: all 0.4s;
+    height: 100%;
+    width: 100%;
+    transform: scaleX(0);
+}
+.project__more .more:hover::before {
+    transform: scaleX(1);
+    border-bottom: 1px solid #505050;
+}
+.project__more .more p {
+    width: 100%;
+}
