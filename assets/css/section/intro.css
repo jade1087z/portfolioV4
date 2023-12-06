@@ -1,0 +1,38 @@
+#main {
+}
+
+#intro {
+    height: 100vh;
+}
+.intro__wrap {
+    position: relative;
+    padding-bottom: 15vw;
+}
+.intro__wrap > span {
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+}
+.intro__wrap > span > img {
+    width: 11.8vw;
+    height: 6.64vw;
+}
+
+.first__text {
+    padding-left: 12vw;
+}
+.intro__wrap > div {
+    font-size: 7.8vw;
+    line-height: 105%;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: -3%;
+}
+.intro__desc {
+    width: 65%;
+}
+.intro__desc,
+.intro__desc em {
+    font-size: 1vw;
+    font-family: var(--font-chosun);
+}

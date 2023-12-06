@@ -5,48 +5,130 @@
     width: 100%;
     height: 11.5vh;
     display: flex;
-    padding: 0vw 1.6vw;
+    padding: 30px 55px 0 45px;
 }
 
 .left {
     width: 50%;
 }
-.logo {
-    display: flex;
-}
-.header__img {
-    width: 4.3vw;
-    height: 4vw;
-}
-
-.header__text {
+.img__logo {
     display: flex;
     width: 100%;
-    padding-top: 2vw;
+    min-width: 100vh;
 }
-.header__text h3 {
-    font-size: 1.2vw;
-    font-family: Josefin Slab;
-    padding: 0 8vw 0vw 2vw;
 
+.img__logo .img {
+    width: 76px;
+    height: 64px;
 }
-.header__text p {
-    font-size: 0.9vw;
-    font-family: 1vw;
+
+.img__logo > h3 {
+    display: inline-block;
+    font-size: 28px;
+    font-family: Josefin Slab;
+    font-weight: 300;
+    padding: 22px 60px 0 20px;
+}
+
+.img__logo p {
+    font-size: 14px;
+    padding-top: 39px;
+    white-space: line;
 }
 
 .right {
     width: 50%;
 }
 
-.right ul {
+.right .header__nav {
     display: flex;
     justify-content: flex-end;
-    padding-top: 2vw;
+    padding-top: 39px;
 }
-.right ul li {
-    padding: 0 1vw 0 1vw;
+.right .header__nav li {
+    padding: 0 15px;
 }
-.right ul li a {
-    font-size: 1vw;
+
+.right .header__nav li a {
+    position: relative;
+    transition: all 0.2s;
+    font-size: 16px;
+}
+
+.right .header__nav li a::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 9px);
+    height: 2px;
+    background-color: var(--black600);
+    left: 7%;
+    bottom: 0%;
+    transform: scaleX(0);
+    transition: all 0.3s;
+}
+.right .header__nav li a:hover {
+    color: var(--black600);
+}
+.right .header__nav li a:hover::before {
+    transform: scaleX(1);
+}
+
+/* mobile */
+.header__nav__mobile {
+    position: absolute;
+    right: 3%;
+    top: 65%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    display: none;
+}
+
+@media (max-width: 930px) {
+    #header {
+        padding-left: 30px;
+    }
+    .header__nav {
+        display: none !important;
+    }
+
+    .header__nav.show {
+        display: block !important;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        background-color: var(--white400);
+        z-index: 1000;
+        min-width: 159px;
+        padding: 20px 0;
+    }
+    .header__nav.show li {
+        display: block;
+        text-align: right;
+        padding-right: 18px;
+    }
+
+    .header__nav.show li a {
+        display: inline-block;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .header__nav__mobile {
+        display: block;
+    }
+}
+@media (max-width: 630px) {
+    .img__logo {
+        width: 500px;
+    }
+    .img__logo > h3 {
+        padding: 22px 30px 0 10px;
+    }
+    .img__logo p {
+        display: none;
+    }
+    .header__nav__mobile {
+        right: 4%;
+    }
 }
