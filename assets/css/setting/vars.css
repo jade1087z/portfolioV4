@@ -28,13 +28,23 @@
     --line-color: #d2dadf;
 }
 
-@media (max-width: 1310px) {
-    * {
+@media (max-width: 1510px) {
+    :root {
         font-size: 14px;
     }
 }
-@media (max-width: 780px) {
-    * {
+@media (max-width: 1400px) {
+    :root* {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1250px) {
+    :root* {
+        font-size: 11px;
+    }
+}
+@media (max-width: 1000px) {
+    :root* {
         font-size: 10px;
     }
 }

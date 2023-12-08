@@ -7,28 +7,31 @@
 
 .intro__wrap {
     padding-bottom: 15vw;
+}
+.img__text {
+    width: 100%;
+    display: flex;
     position: relative;
 }
-
-.img__hidden {
+.img__hidden img {
     position: absolute;
     top: 0%;
     left: 0%;
 }
-.img__hidden img {
-    width: 12rem;
-    height: 7rem;
-}
 
 .img__hidden,
 .text__hidden {
-    height: 9rem;
+    height: 150px;
     overflow: hidden;
 }
 
+.img__hidden img {
+    width: 14rem;
+    height: 9rem;
+}
 .text__hidden h3 {
-    font-size: 8rem;
-    line-height: 110%;
+    font-size: 9.3rem;
+    line-height: 105%;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: -3%;
