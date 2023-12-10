@@ -18,11 +18,48 @@ const animateBTT1_2_3 = (item, y) => {
         {
             autoAlpha: 1,
             y: 0,
-            duration: 0.5,
+            duration: 1.5,
             overwrite: "auto",
             ease: "power2.inOut",
         }
     );
+
+    if (item.classList.contains("BTT1")) {
+        const xDistance = () => {
+            let x = 0;
+            if (window.innerWidth >= 1720) {
+                x = window.innerWidth * 0.007 + "rem";
+            } else if (window.innerWidth <= 1700) {
+                x = window.innerWidth * 0.008 + "rem";
+            } else if (window.innerWidth <= 1580) {
+                x = window.innerWidth * 0.0085 + "rem";
+            } else if (window.innerWidth <= 1400) {
+                x = window.innerWidth * 0.001 + "rem";
+            } else if (window.innerWidth <= 1280) {
+                x = window.innerWidth * 155 + "px";
+            }
+            //  else if (window.innerWidth >= 980) {
+            //     x = window.innerWidth * 0.015 + "rem";
+            // } else if (window.innerWidth <= 780) {
+            //     x = window.innerWidth * 0.2 + "rem";
+            // }
+
+            return x;
+        };
+
+        timeline.fromTo(
+            item,
+            {
+                x: 0,
+            },
+            {
+                x: 11 + "vw",
+                duration: 1.5,
+                overwrite: "auto",
+                ease: "power2.inOut",
+            }
+        );
+    }
 
     return timeline;
 };
@@ -35,7 +72,7 @@ const animateBTT4 = (item) => {
         },
         {
             autoAlpha: 1,
-            duration: 3.5,
+            duration: 5.5,
             overwrite: "auto",
             ease: "power2.inOut",
         }

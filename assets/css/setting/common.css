@@ -10,7 +10,7 @@ body {
 }
 
 section {
-    padding: 150px 55px 50px 55px;
+    padding: 150px 55px 0px 55px;
 }
 @media (max-width: 800px) {
     section {

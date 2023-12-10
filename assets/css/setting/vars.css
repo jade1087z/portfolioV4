@@ -26,6 +26,7 @@
     --white: #fff;
     --white100: #eaeaea;
     --line-color: #d2dadf;
+    --desc-color: #888a8b;
 }
 
 @media (max-width: 1510px) {

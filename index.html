@@ -11,30 +11,43 @@
 
 <body>
     <div id="wrap">
+        <div id="skip">
+            <a href="#header">헤더 영역 바로가기</a>
+            <a href="#intro">소개 영역 바로가기</a>
+            <a href="#skill">스킬 영역 바로가기</a>
+            <a href="#site">사이트 영역 바로가기</a>
+            <a href="#port">포트폴리오 영역 바로가기</a>
+            <a href="#contact">연락처 영역 바로가기</a>
+            <a href="#footer">푸터 영역 바로가기</a>
+        </div>
         <header id="header">
-            <div class="left">
-                <div class="img__logo">
-                    <a href="#" class="img"><img src="assets/img/logo.png" alt=""></a>
-                    <h3>DEVELOPER</h3>
-                    <P>Korea, Monday 22:00</P>
+            <div class="header__inner">
+
+                <div class="left">
+                    <div class="img__logo">
+                        <a href="#" class="img"><img src="assets/img/logo.png" alt=""></a>
+                        <h3>DEVELOPER</h3>
+                        <P>Korea, Monday 22:00</P>
+                    </div>
                 </div>
-            </div>
-            <nav class="right">
-                <ul class="header__nav">
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">skill</a></li>
-                    <li><a href="#">contact</a></li>
-                    <li><a href="#">comment</a></li>
-                </ul>
-            </nav>
-            <div class="header__nav__mobile" id="headerToggle" aria-controls="primary-menu" aria-expanded=""
-                role="button">
-                Menu
+                <nav class="right">
+                    <ul class="header__nav">
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">work</a></li>
+                        <li><a href="#">skill</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">comment</a></li>
+                    </ul>
+                </nav>
+                <div class="header__nav__mobile" id="headerToggle" aria-controls="primary-menu" aria-expanded=""
+                    role="button">
+                    Menu
+                </div>
             </div>
         </header>
 
         <main id="main">
+            <div class="fixed__box" style="height: 140px;"></div>
             <section id="intro">
                 <div class="intro__inner">
                     <div class="intro__wrap">
@@ -42,7 +55,8 @@
                         <div class="text__hidden first">
                             <h3 class="first__text reveal BTT1">frontend</h3>
                         </div>
-                        <div class="img__hidden reveal BTT4"><img src="assets/img/intro__card.png" alt="intro">
+                        <div class="img__hidden reveal BTT4">
+                            <div class="img"></div>
                         </div>
                         <div class="text__hidden">
                             <h3 class="reveal BTT2">developer</h3>
@@ -51,12 +65,10 @@
                             <h3 class="reveal BTT3">I want to be.</h3>
                         </div>
 
-
-
                     </div>
                     <div class="intro__desc">
-                        도전은 언제나 두렵지만, 가장 큰 위험은 위험없는
-                        삶이다 ! 도전하는 것을 두려워하지 않는 신입
+                        <em>가장 큰 위험은 위험없는 삶이다!</em> <br>
+                        도전하는 것을 두려워하지 않는 신입
                         프론트엔드 개발자, 임종한입니다. 누구의 인생이나
                         그렇듯 저 또한 지금까지 도전의 연속이었습니다.
                         제 전공과 직업을 버리고 새로운 길로 들어서기로
@@ -74,14 +86,162 @@
                     </div>
                 </div>
             </section>
+            <!-- intro -->
 
+            <section id="slide">
+                <div class="slider__wrap">
+                    <div class="slider s1">
+                        <div class="img">
+                            <img src="assets/img/banner01.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="slider s2">
+                        <div class="img">
+                            <img src="assets/img/banner02.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="slider s3">
+                        <div class="img">
+                            <img src="assets/img/banner03.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="slider s4">
+                        <div class="img">
+                            <img src="assets/img/banner04.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- slider -->
 
+            <section id="project">
+                <div class="project__wrap">
+                    <div class="wrap">
+                        <div class="icon img">
+                            <div class="arrow">
+                                <svg class="reveal BTT2" xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div class="text__hidden">
+                            <div class="text__main reveal BTT2">FROM COMPLEX CHALLENGES TO </div>
+                            <div class="text__main reveal BTT3">COLLOABRATIVE PARTNERSHIPS</div>
+                        </div>
+                        <div class="project__flexBox">
+                            <div class="leftFlex"></div>
+                            <div class="rightFlex">
+                                <p class="desc__title">
+                                    가장 큰 위험은 위헙없는 삶이다!
+                                </p>
+                                <p>
+                                    도전하는 것을 두려워하지 않는 신입
+                                    프론트엔드 개발자, 임종한입니다. 누구의
+                                    인생이나 그렇듯 저 또한 지금까지 도전의
+                                    연속이었습니다. 제 전공과 직업을 버리고
+                                    새로운 길로 들어서기로 마음 먹었을 때,
+                                    두렵지 않냐는 질문들이 많았습니다. 적은
+                                    나이도 아니었고, 그동안 해왔던 것들이
+                                    있었기 때문입니다. 안정적인 상태에서
+                                    새로운 도전을 하는 것이 쉬운 결정은
+                                    아니었지만, 저의 진정한 적성과 흥미를
+                                    찾아 더 나아가기 위해 시작하게
+                                    되었습니다. 지금은 부족한 것이 많은
+                                    저이지만, 끊임없이 배우고 공부할
+                                    것입니다.
+                                </p>
+                                <div class="project__more">
+                                    <a href="#">
+                                        Let’s work together
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14"
+                                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                            <path
+                                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="work">
+                <div class="work__inner">
+                    <div class="work__wrap">
+                        <div class="work__title">
+                            <div class="img__hidden reveal BTT4">
+                                <div class="img"></div>
+                            </div>
+                            <div class="hidden__text">
+                                <h3 class="reveal BTT1">FRONTEND</h3>
+                            </div>
+                            <div class="hidden__text">
+                                <h3 class="reveal BTT2"> WORK LIST </h3>
+                            </div>
+                        </div>
+                        <div class="work__flexBox">
+                            <div class="leftFlex"></div>
+                            <div class="rightFlex">
+                                <p class="title">
+                                    나의 작업리스트!
+                                </p>
+                                <p class="desc">
+                                    도전하는 것을 두려워하지 않는 신입
+                                    프론트엔드 개발자, 김찬미입니다. 누구의
+                                    인생이나 그렇듯 저 또한 지금까지 도전의
+                                    연속이었습니다. 제 전공과 직업을 버리고
+                                    새로운 길로 들어서기로 마음 먹었을 때,
+                                    두렵지 않냐는
+                                </p>
+                                <p class="underline">React, Node.</p>
+                            </div>
+                        </div>
+                        <div class="work__list">
+                            <div class="work__item w1">
+                                <div class="num__hidden">
+                                    <div class="num reveal BTT2">1.</div>
+                                </div>
+                                <div class="item__wrap">
+                                    <div class="item__title">
+                                        <div class="text__hidden">
+                                            <h4 class="reveal BTT2"> From complex challenges to </h4><br>
+                                            <h4 class="reveal BTT2">collaborative partnerships </h4>
+                                        </div>
+                                    </div>
+                                    <div class="item__img">
+                                        <img src="assets/img/proj01.png" alt="proj01" />
+                                    </div>
+                                    <div class="item__desc">
+
+                                        <div class="desc__wrap">
+                                            <div class="flex__desc">
+                                                <span>Discovery</span>
+                                                <FaPlus class="icon__plus" />
+                                            </div>
+                                            <div class="hidden__desc">
+                                                asd
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- work -->
         </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
-    <script src="/assets/js/gsap1.js"></script>
+    <script src="/assets/js/gsap2.js"></script>
+    <script src="/assets/js/hover.js"></script>
 
 
 

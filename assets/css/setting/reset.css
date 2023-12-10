@@ -131,3 +131,20 @@ select {
     text-indent: -9999px;
     white-space: nowrap;
 }
+/* skip */
+#skip {
+    position: relative;
+    z-index: 1000000;
+}
+#skip a {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    left: -400px;
+    top: 0;
+    padding: 20px 40px;
+}
+#skip a:active,
+#skip a:focus {
+    left: 0;
+}

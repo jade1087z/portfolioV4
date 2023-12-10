@@ -1,4 +1,4 @@
-const list = document.querySelectorAll(".menu li a");
+const list = document.querySelectorAll(".header__nav li a");
 
 list.forEach(li => {
     li.addEventListener("mouseover", () => {
