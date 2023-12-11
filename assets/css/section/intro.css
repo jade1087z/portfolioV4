@@ -1,23 +1,20 @@
 #main {
-    
 }
 
 #intro {
-    height: calc(100vh);
     /* padding: 8.1vw 2.7vw 47vw 2.7vw; */
     /* padding-bottom: 47vw; */
     /* 150 / 55 /50 */
     padding-top: 0;
 }
 .intro__inner {
-    height: 100%;
 }
 .intro__wrap {
     padding-bottom: 15vw;
     position: relative;
 }
 
-#intro  .intro__inner .img__hidden {
+#intro .intro__inner .img__hidden {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -50,7 +47,6 @@
 
 .intro__desc,
 .intro__desc em {
-    font-size: 1vw;
+    font-size: 1rem;
     font-family: var(--font-chosun);
-    line-height: 155%;
 }

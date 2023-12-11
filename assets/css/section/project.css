@@ -1,9 +1,11 @@
-@import '../setting/animation.css';
+@import "../setting/animation.css";
 #project {
     padding-top: 100px;
 }
-.project__wrap{
+.project__wrap {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 .project__wrap > .wrap {
     width: 35%;
@@ -18,9 +20,10 @@
 
 .project__wrap > .text {
 }
-.project__wrap > .text >.text__hidden {
+.project__wrap > .text > .text__hidden {
     height: 10vw;
-    margin-bottom: 80px;
+    margin-bottom: 9.5vw;
+    white-space: nowrap;
 }
 .project__wrap > .text > .text__hidden > .text__main {
     padding-left: 1rem;
@@ -28,37 +31,26 @@
     font-weight: 600;
     line-height: 120%;
 }
-.project__wrap > .text > .project__flexBox  {
-    display: flex; 
-} 
+.project__wrap > .text > .project__flexBox {
+    display: flex;
+}
 .project__wrap > .text > .project__flexBox > .leftFlex {
     width: 45%;
 }
-.project__wrap > .text > .project__flexBox > .rightFlex  {
+.project__wrap > .text > .project__flexBox > .rightFlex {
     width: 53%;
 }
 
 .project__wrap > .text > .project__flexBox > .rightFlex p {
-    font-size: 1vw;
-    padding: 1vw 0;
+    font-size: 1rem;
+    padding: 0.5vw 0 3vw 0;
     font-family: var(--font-chosun);
     color: var(--desc-color);
 }
 .project__wrap > .text > .project__flexBox > .rightFlex > .desc__title {
-    position: relative;
-    width: 100%;
-    display: inline-block;
     color: var(--black);
-}
-
-.project__wrap > .text > .project__flexBox > .rightFlex > .desc__title::after {
-    content: '';
-    position: absolute;
-    width: calc(100% - 560px);
-    height: 1px;
-    background-color: #000;
-    left: 0%;
-    top: 72%;
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
 .project__wrap > .text > .project__flexBox > .rightFlex > .project__more {
@@ -67,40 +59,87 @@
 
 .project__wrap > .text > .project__flexBox > .rightFlex > .project__more a {
     position: relative;
-    display: inline-block;
-    width: 30%;
+    width: 11.1vw;
+    /* width: 30%; */
     display: flex;
     justify-content: space-between;
     pointer-events: auto;
+    white-space: nowrap;
+    font-size: 1vw;
 }
-.project__wrap > .text > .project__flexBox > .rightFlex > .project__more a::after,
-.project__wrap > .text > .project__flexBox > .rightFlex > .project__more a::before {
-    content: '';
+
+.project__flexBox > .rightFlex > .project__more a::after,
+.project__flexBox > .rightFlex > .project__more a::before {
+    content: "";
     position: absolute;
     background-color: #000;
     height: 1px;
     width: 100%;
-    left:0;
+    left: 0;
     right: 0;
     top: 103%;
-    transform: scaleX(1);   /* 초기 상태를 1로 설정 */
+    transform: scaleX(1); /* 초기 상태를 1로 설정 */
     transform-origin: left; /* 변환의 기준점을 왼쪽으로 설정 */
-    transition: transform .55s cubic-bezier(.785, .135, .15, .86); /* 기본 상태에 transition 추가 */
+    transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86); /* 기본 상태에 transition 추가 */
 }
 
-.project__wrap > .text > .project__flexBox > .rightFlex > .project__more a:hover::before {
+.project__flexBox > .rightFlex > .project__more a:hover::before {
     transform: scaleX(0); /* hover 상태에서 scaleX를 0으로 설정 */
     transform-origin: right; /* hover 상태에서 변환의 기준점을 오른쪽으로 설정 */
-    transition-delay: .0s;
+    transition-delay: 0s;
 }
 
-.project__wrap > .text > .project__flexBox > .rightFlex > .project__more a:hover::after {
+.project__flexBox > .rightFlex > .project__more a:hover::after {
     transform: scaleX(0); /* hover 상태에서 scaleX를 0으로 설정 */
     transform-origin: right; /* hover 상태에서 변환의 기준점을 오른쪽으로 설정 */
-    transition-delay: .5s; /* delay를 추가하여 순차적으로 보이게 함 */
+    transition-delay: 0.5s; /* delay를 추가하여 순차적으로 보이게 함 */
 }
-
 .project__wrap > .text > .project__flexBox > .rightFlex > .project__more a svg {
-    margin-top: 5px;
+    width: 1vw;
+    height: 1vw;
+    position: absolute;
+    top: 13%;
+    right: 0px;
     animation: arrowAnimation2 1.4s infinite;
+}
+
+@media (max-width: 1300px) {
+    .project__more a svg {
+        /* display: none; */
+    }
+}
+
+@media (max-width: 800px) {
+    .project__wrap {
+        display: block;
+    }
+    .wrap {
+        display: none;
+    }
+    .project__wrap .text .text__hidden .text__main {
+        padding-left: 0;
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    .project__wrap > .text > .project__flexBox {
+        display: block;
+    }
+    .project__wrap > .text > .project__flexBox .leftFlex {
+        display: none;
+    }
+    .project__wrap > .text > .project__flexBox > .rightFlex {
+        width: 100%;
+    }
+    .project__wrap > .text > .project__flexBox > .rightFlex > .desc__title {
+        font-size: 1.2rem;
+    }
+    .project__wrap > .text > .project__flexBox > .rightFlex p {
+        font-size: 1rem;
+    }
+    .project__wrap > .text > .project__flexBox > .rightFlex > .project__more a {
+        font-size: 1.2rem;
+        width: 40%;
+    }
+    .text > .project__flexBox > .rightFlex > .project__more a svg {
+    }
 }
