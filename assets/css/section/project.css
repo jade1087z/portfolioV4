@@ -65,7 +65,7 @@
     justify-content: space-between;
     pointer-events: auto;
     white-space: nowrap;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 .project__flexBox > .rightFlex > .project__more a::after,
